@@ -64,7 +64,7 @@ python scripts/l10n.py build --version 1.0.3
 
 IDEA → **设置 → 插件 → 从磁盘安装插件** → 选择 `releases/com.chinese.idea.localization-1.0.3.jar`
 
-> **安装后仍是英文？** 请看 [docs/INSTALL.md](docs/INSTALL.md) — 必须在「语言与区域」中手动选择简体中文。
+> **安装后仍是英文？** 多半是官方中文包被禁用了。运行 `.\scripts\fix-locale.ps1` 后重启，详见 [docs/INSTALL.md](docs/INSTALL.md)。**不需要管理员权限。**
 
 ## 常用命令
 
