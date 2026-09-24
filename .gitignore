@@ -3,8 +3,8 @@ dist/
 build/
 out/
 reports/
-*.jar
-!releases/*.jar
+releases/*.jar
+!releases/com.chinese.idea.localization-*.jar
 *.zip
 
 # 从 IDE 提取的原始资源（体积大，本地生成）
