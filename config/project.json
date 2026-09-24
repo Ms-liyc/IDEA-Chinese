@@ -1,0 +1,27 @@
+{
+  "name": "IntelliJ IDEA 简体中文汉化组",
+  "locale": "zh-CN",
+  "localeUnderscore": "zh_CN",
+  "pluginId": "com.chinese.idea.localization",
+  "pluginName": "IntelliJ IDEA 社区中文语言包",
+  "vendor": "屿宸网络科技工作室",
+  "vendorUrl": "https://github.com/Ms-liyc/IDEA-Chinese",
+  "vendorEmail": "lyc5202025@126.com",
+  "supportedProducts": [
+    "IntelliJ IDEA"
+  ],
+  "ideaPaths": [
+    "D:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.1",
+    "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.2",
+    "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.1",
+    "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.3",
+    "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.2"
+  ],
+  "officialZhPlugin": "plugins/localization-zh/lib/localization-zh.jar",
+  "sourceDir": "resources/en",
+  "targetDir": "resources/zh-CN",
+  "pluginOutDir": "dist",
+  "reportsDir": "reports",
+  "minBuild": "242",
+  "untilBuild": "253.*"
+}

@@ -1,0 +1,98 @@
+<idea-plugin>
+  <id>{{PLUGIN_ID}}</id>
+  <name>{{PLUGIN_NAME}}</name>
+  <vendor url="{{VENDOR_URL}}" email="{{VENDOR_EMAIL}}">{{VENDOR}}</vendor>
+  <version>{{VERSION}}</version>
+
+  <description><![CDATA[
+<div style="text-align: center;">
+  <img src="assets/logo.png" alt="屿宸网络科技工作室" width="360"/>
+</div>
+
+<h2 style="text-align: center;">IntelliJ IDEA 简体中文语言包</h2>
+
+<p style="text-align: center;">
+  全量扫描 IDEA 界面 NLS 字符串，合并官方中文基线与社区增量翻译。<br/>
+  安装后可将菜单、设置、检查项、意图动作与工具窗口切换为简体中文。
+</p>
+
+<p style="text-align: center;">
+  <b>✨ 当前版本 {{VERSION}}</b><br/>
+  <span style="color: gray;">IDEA 2024.2+ · Language Pack · 约 12 万条基线 + 社区补齐词条</span>
+</p>
+
+<h3>🌟 项目亮点</h3>
+<ul>
+  <li><b>🎯 全量汉化</b> — 扫描 <code>lib/</code> 与 <code>plugins/</code> 全部模块 JAR，覆盖 messages / inspection / intention / templates</li>
+  <li><b>🔒 零侵入安装</b> — 纯语言包插件，不写 IDE 安装目录，无需管理员权限</li>
+  <li><b>🌏 官方基线</b> — 基于 <code>localization-zh.jar</code> 增量补齐，避免从零翻译</li>
+  <li><b>⚡ 安装即用</b> — 启用插件并在「语言与区域」选择简体中文，重启 IDE 生效</li>
+  <li><b>📊 缺口可视</b> — 配套 <code>l10n report</code> 工具，待译条目一目了然</li>
+  <li><b>📜 持续维护</b> — 屿宸网络科技工作室 / IDEA 汉化组</li>
+</ul>
+
+<table cellpadding="4" cellspacing="0">
+  <tr>
+    <td bgcolor="#007ec6"><font color="#ffffff"><b>&nbsp;version&nbsp;</b></font></td>
+    <td bgcolor="#007ec6"><font color="#ffffff">&nbsp;{{VERSION}}&nbsp;</font></td>
+    <td bgcolor="#4c1">&nbsp;</td>
+    <td bgcolor="#4c1"><font color="#ffffff"><b>&nbsp;type&nbsp;</b></font></td>
+    <td bgcolor="#4c1"><font color="#ffffff">&nbsp;Language Pack&nbsp;</font></td>
+    <td bgcolor="#555">&nbsp;</td>
+    <td bgcolor="#555"><font color="#ffffff"><b>&nbsp;license&nbsp;</b></font></td>
+    <td bgcolor="#555"><font color="#ffffff">&nbsp;MIT&nbsp;</font></td>
+  </tr>
+  <tr>
+    <td bgcolor="#fe7d37"><font color="#ffffff"><b>&nbsp;locale&nbsp;</b></font></td>
+    <td bgcolor="#fe7d37"><font color="#ffffff">&nbsp;zh-CN&nbsp;</font></td>
+    <td bgcolor="#007ec6">&nbsp;</td>
+    <td bgcolor="#007ec6"><font color="#ffffff"><b>&nbsp;IDEA&nbsp;</b></font></td>
+    <td bgcolor="#007ec6"><font color="#ffffff">&nbsp;2024.2+&nbsp;</font></td>
+    <td bgcolor="#4c1">&nbsp;</td>
+    <td bgcolor="#4c1"><font color="#ffffff"><b>&nbsp;keys&nbsp;</b></font></td>
+    <td bgcolor="#4c1"><font color="#ffffff">&nbsp;124k+&nbsp;</font></td>
+  </tr>
+</table>
+
+<p style="text-align: center; color: gray;">
+  说明：本插件仅替换界面文案，不修改 IDE 核心程序。<br/>
+  请通过「设置 → 插件 → 从磁盘安装插件」安装。
+</p>
+
+<p style="text-align: center;">
+  <b>⚠️ 注意</b>：安装后建议<b>禁用官方中文语言包</b>以避免冲突；<br/>
+  修改语言设置后请<b>完整重启 IDE</b>（不要仅 Reload Window）。
+</p>
+  ]]></description>
+
+  <change-notes><![CDATA[
+<h3>🚀 {{VERSION}} — 首次发布</h3>
+
+<ul>
+  <li><b>全量资源扫描</b>：支持 IDEA 2024.2+ 模块化结构，扫描 <code>lib/</code> 与全部 <code>plugins/</code> JAR</li>
+  <li><b>官方基线导入</b>：以 <code>localization-zh.jar</code> 为底，保留 JetBrains 官方译文</li>
+  <li><b>增量同步</b>：自动合并英文新增键，保留已有中文翻译</li>
+  <li><b>缺口报告</b>：内置 <code>l10n report</code>，输出待译文件与键清单</li>
+  <li><b>社区补齐</b>：覆盖 7,466 个资源文件、124,000+ 条 UI 字符串</li>
+  <li><b>插件信息完善</b>：更新概览页、最新变化、开发者信息与品牌 Logo</li>
+</ul>
+
+<h3>📦 安装提示</h3>
+<ol>
+  <li>禁用官方「Chinese (Simplified) Language Pack」</li>
+  <li>从磁盘安装本插件并重启 IDE</li>
+  <li>前往「外观与行为 → 系统设置 → 语言与区域」选择<b>简体中文</b></li>
+</ol>
+
+<p><b>开发者</b>：屿宸网络科技工作室<br/>
+<b>维护</b>：IDEA 汉化组</p>
+  ]]></change-notes>
+
+  <idea-version since-build="{{MIN_BUILD}}" until-build="{{UNTIL_BUILD}}"/>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <languageBundle locale="{{LOCALE}}"/>
+  </extensions>
+</idea-plugin>

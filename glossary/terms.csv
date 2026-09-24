@@ -1,0 +1,41 @@
+english,chinese,notes
+Settings,设置,菜单/对话框标题
+Plugins,插件,
+Run,运行,与 Execute 区分
+Debug,调试,
+Refactor,重构,
+Inspection,检查,代码检查
+Intention action,意图动作,快速修复类动作
+Commit,提交,版本控制
+Branch,分支,
+Merge,合并,
+Pull,拉取,
+Push,推送,
+Diff,差异,
+Breakpoint,断点,
+Console,控制台,
+Terminal,终端,
+Project,项目,
+Module,模块,
+Library,库,
+Dependency,依赖,
+Framework,框架,
+Template,模板,
+Live Template,实时模板,
+Postfix completion,后缀补全,
+Code completion,代码补全,
+Intentions,意图,设置分类
+Appearance,外观,
+Behavior,行为,
+Keymap,按键映射,
+Notification,通知,
+Bookmark,书签,
+Favorite,收藏,
+Structure,结构,工具窗口
+Palette,调色板,
+Gradle,Gradle,不翻译
+Maven,Maven,不翻译
+Git,Git,不翻译
+Docker,Docker,不翻译
+Kotlin,Kotlin,不翻译
+Java,Java,不翻译

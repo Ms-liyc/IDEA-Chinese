@@ -1,0 +1,31 @@
+# 构建产物
+dist/
+build/
+out/
+reports/
+*.jar
+*.zip
+
+# 从 IDE 提取的原始资源（体积大，本地生成）
+resources/en/
+resources/extracted/
+.cache/
+
+# 编辑器与系统
+.idea/
+*.iml
+.vscode/
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 日志与临时文件
+*.log
+*.tmp
+*.bak

@@ -1,0 +1,6 @@
+source=D:\Program Files\JetBrains\IntelliJ IDEA 2025.3.1\plugins\localization-zh\lib\localization-zh.jar
+idea_path=D:\Program Files\JetBrains\IntelliJ IDEA 2025.3.1
+files=7250
+properties=1222
+html=6028
+xml=0
