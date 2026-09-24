@@ -54,8 +54,9 @@ def _copy_tree(src: Path, dst: Path, *, escape_properties: bool = True) -> None:
         if item.is_dir():
             target.mkdir(parents=True, exist_ok=True)
             continue
-        if item.suffix == ".properties" and escape_properties:
-            _write_properties(target, item.read_text(encoding="utf-8", errors="replace"))
+        if item.suffix == ".properties":
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(item, target)
         else:
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(item, target)

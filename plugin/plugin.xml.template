@@ -89,11 +89,13 @@
 <b>维护</b>：IDEA 汉化组</p>
   ]]></change-notes>
 
+  <category>IDE Localization</category>
+
   <idea-version since-build="{{MIN_BUILD}}" until-build="{{UNTIL_BUILD}}"/>
 
   <depends>com.intellij.modules.platform</depends>
 
   <extensions defaultExtensionNs="com.intellij">
-    <languageBundle locale="{{LOCALE}}"/>
+    <languageBundle locale="{{LOCALE}}" displayName="Chinese (Simplified) 简体中文（社区版）"/>
   </extensions>
 </idea-plugin>
