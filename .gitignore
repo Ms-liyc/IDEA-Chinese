@@ -1,9 +1,10 @@
-# 构建产物
+# 构建产物（本地）
 dist/
 build/
 out/
 reports/
 *.jar
+!releases/*.jar
 *.zip
 
 # 从 IDE 提取的原始资源（体积大，本地生成）

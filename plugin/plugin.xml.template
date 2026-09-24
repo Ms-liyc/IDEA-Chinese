@@ -66,15 +66,15 @@
   ]]></description>
 
   <change-notes><![CDATA[
-<h3>🚀 {{VERSION}} — 首次发布</h3>
+<h3>🚀 {{VERSION}}</h3>
 
 <ul>
   <li><b>全量资源扫描</b>：支持 IDEA 2024.2+ 模块化结构，扫描 <code>lib/</code> 与全部 <code>plugins/</code> JAR</li>
   <li><b>官方基线导入</b>：以 <code>localization-zh.jar</code> 为底，保留 JetBrains 官方译文</li>
   <li><b>增量同步</b>：自动合并英文新增键，保留已有中文翻译</li>
-  <li><b>缺口报告</b>：内置 <code>l10n report</code>，输出待译文件与键清单</li>
   <li><b>社区补齐</b>：覆盖 7,466 个资源文件、124,000+ 条 UI 字符串</li>
-  <li><b>插件信息完善</b>：更新概览页、最新变化、开发者信息与品牌 Logo</li>
+  <li><b>品牌信息</b>：开发者屿宸网络科技工作室，联系邮箱 lyc5202025@126.com</li>
+  <li><b>仓库同步</b>：开源至 <a href="https://github.com/Ms-liyc/IDEA-Chinese">GitHub</a></li>
 </ul>
 
 <h3>📦 安装提示</h3>
@@ -85,6 +85,7 @@
 </ol>
 
 <p><b>开发者</b>：屿宸网络科技工作室<br/>
+<b>邮箱</b>：lyc5202025@126.com<br/>
 <b>维护</b>：IDEA 汉化组</p>
   ]]></change-notes>
 
