@@ -1,0 +1,31 @@
+<idea-plugin allow-bundled-update="true">
+  <id>{{PLUGIN_ID}}</id>
+  <version>{{VERSION}}</version>
+  <idea-version since-build="{{MIN_BUILD}}"/>
+  <name>{{PLUGIN_NAME}}</name>
+  <vendor url="{{VENDOR_URL}}" email="{{VENDOR_EMAIL}}">{{VENDOR}}</vendor>
+  <category>Language Pack</category>
+
+  <description><![CDATA[
+IntelliJ IDEA 独立简体中文语言包（不依赖 JetBrains 官方中文扩展）。<br/>
+由屿宸网络科技工作室 / IDEA 汉化组维护，覆盖 124,000+ 条 UI 字符串。<br/>
+安装后请在「Language and Region」选择简体中文并完整重启 IDE。
+  ]]></description>
+
+  <change-notes><![CDATA[
+<h3>{{VERSION}} 独立汉化版</h3>
+<ul>
+  <li>不依赖官方 Chinese (Simplified) Language Pack</li>
+  <li>修正 languageBundle 注册方式，兼容 IDEA 2024.2+</li>
+  <li>提供 standalone 目录安装包，普通用户权限即可</li>
+</ul>
+  ]]></change-notes>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <languageBundle locale="{{LOCALE}}" displayName="Chinese (Simplified) 简体中文（独立版）"/>
+  </extensions>
+
+  <locale>{{LOCALE}}</locale>
+</idea-plugin>

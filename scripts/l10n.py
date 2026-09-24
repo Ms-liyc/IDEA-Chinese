@@ -39,8 +39,9 @@ def main() -> int:
     report_cmd = sub.add_parser("report", help="生成汉化缺口报告（对比 en 与 zh-CN）")
     report_cmd.add_argument("--output", action="store_true", help="写入 reports/gap-report.json")
 
-    build_cmd = sub.add_parser("build", help="将 zh-CN 资源打包为语言包插件")
+    build_cmd = sub.add_parser("build", help="将 zh-CN 资源打包为独立语言包")
     build_cmd.add_argument("--version", default="1.0.0", help="插件版本号")
+    build_cmd.add_argument("--legacy", action="store_true", help="使用旧版 plugin.xml 模板")
 
     validate_cmd = sub.add_parser("validate", help="校验翻译完整性与格式")
     validate_cmd.add_argument("--strict", action="store_true", help="缺失翻译时返回非零退出码")
@@ -74,8 +75,15 @@ def main() -> int:
         return 0
 
     if args.command == "build":
-        output = build_plugin(ROOT, config, version=args.version)
-        print(f"构建完成: {output}")
+        outputs = build_plugin(
+            ROOT,
+            config,
+            version=args.version,
+            standalone=not args.legacy,
+        )
+        print(f"JAR: {outputs['jar']}")
+        if "zip" in outputs:
+            print(f"ZIP: {outputs['zip']}")
         return 0
 
     if args.command == "validate":

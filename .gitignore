@@ -5,6 +5,7 @@ out/
 reports/
 releases/*.jar
 !releases/com.chinese.idea.localization-*.jar
+!releases/idea-chinese-standalone-*.zip
 *.zip
 
 # 从 IDE 提取的原始资源（体积大，本地生成）
