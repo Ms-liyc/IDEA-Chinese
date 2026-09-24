@@ -7,18 +7,87 @@
   <category>Language Pack</category>
 
   <description><![CDATA[
-IntelliJ IDEA 独立简体中文语言包（不依赖 JetBrains 官方中文扩展）。<br/>
-由屿宸网络科技工作室 / IDEA 汉化组维护，覆盖 124,000+ 条 UI 字符串。<br/>
-安装后请在「Language and Region」选择简体中文并完整重启 IDE。
+<div style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/Ms-liyc/IDEA-Chinese/main/plugin/assets/logo.png" alt="屿宸网络科技工作室" width="360"/>
+</div>
+
+<h2 style="text-align: center;">IntelliJ IDEA 独立简体中文语言包</h2>
+
+<p style="text-align: center;">
+  全量扫描 IDEA 界面 NLS 字符串，<b>不依赖 JetBrains 官方中文扩展</b>。<br/>
+  安装后可将菜单、设置、检查项、意图动作与工具窗口切换为简体中文。
+</p>
+
+<p style="text-align: center;">
+  <b>✨ 当前版本 {{VERSION}}</b><br/>
+  <span style="color: gray;">IDEA 2024.2+ · 独立 Language Pack · 约 12 万条 UI 字符串</span>
+</p>
+
+<h3>🌟 项目亮点</h3>
+<ul>
+  <li><b>🎯 全量汉化</b> — 扫描 <code>lib/</code> 与 <code>plugins/</code> 全部模块 JAR，覆盖 messages / inspection / intention / templates</li>
+  <li><b>🔒 独立安装</b> — 不依赖官方中文扩展，普通用户权限即可，不写安装目录</li>
+  <li><b>🌏 完整资源</b> — 覆盖 7,466 个资源文件、124,000+ 条 UI 字符串</li>
+  <li><b>⚡ 安装即用</b> — 运行 <code>install-standalone.ps1</code>，在「语言与区域」选择简体中文（独立版）</li>
+  <li><b>📊 缺口可视</b> — 配套 <code>l10n report</code> 工具，待译条目一目了然</li>
+  <li><b>📜 持续维护</b> — 屿宸网络科技工作室 / IDEA 汉化组</li>
+</ul>
+
+<table cellpadding="4" cellspacing="0">
+  <tr>
+    <td bgcolor="#007ec6"><font color="#ffffff"><b>&nbsp;version&nbsp;</b></font></td>
+    <td bgcolor="#007ec6"><font color="#ffffff">&nbsp;{{VERSION}}&nbsp;</font></td>
+    <td bgcolor="#4c1">&nbsp;</td>
+    <td bgcolor="#4c1"><font color="#ffffff"><b>&nbsp;type&nbsp;</b></font></td>
+    <td bgcolor="#4c1"><font color="#ffffff">&nbsp;Standalone&nbsp;</font></td>
+    <td bgcolor="#555">&nbsp;</td>
+    <td bgcolor="#555"><font color="#ffffff"><b>&nbsp;license&nbsp;</b></font></td>
+    <td bgcolor="#555"><font color="#ffffff">&nbsp;MIT&nbsp;</font></td>
+  </tr>
+  <tr>
+    <td bgcolor="#fe7d37"><font color="#ffffff"><b>&nbsp;locale&nbsp;</b></font></td>
+    <td bgcolor="#fe7d37"><font color="#ffffff">&nbsp;zh-CN&nbsp;</font></td>
+    <td bgcolor="#007ec6">&nbsp;</td>
+    <td bgcolor="#007ec6"><font color="#ffffff"><b>&nbsp;IDEA&nbsp;</b></font></td>
+    <td bgcolor="#007ec6"><font color="#ffffff">&nbsp;2024.2+&nbsp;</font></td>
+    <td bgcolor="#4c1">&nbsp;</td>
+    <td bgcolor="#4c1"><font color="#ffffff"><b>&nbsp;keys&nbsp;</b></font></td>
+    <td bgcolor="#4c1"><font color="#ffffff">&nbsp;124k+&nbsp;</font></td>
+  </tr>
+</table>
+
+<p style="text-align: center; color: gray;">
+  说明：本插件仅替换界面文案，不修改 IDE 核心程序。<br/>
+  安装：<code>.\scripts\install-standalone.ps1</code> 或解压 standalone zip 到用户 plugins 目录。
+</p>
+
+<p style="text-align: center;">
+  <b>⚠️ 注意</b>：独立版会自动禁用官方中文扩展；<br/>
+  请在「语言与区域」选择<b>简体中文（独立版）</b>并<b>完整重启 IDE</b>。
+</p>
   ]]></description>
 
   <change-notes><![CDATA[
-<h3>{{VERSION}} 独立汉化版</h3>
+<h3>🚀 {{VERSION}}</h3>
+
 <ul>
-  <li>不依赖官方 Chinese (Simplified) Language Pack</li>
-  <li>修正 languageBundle 注册方式，兼容 IDEA 2024.2+</li>
-  <li>提供 standalone 目录安装包，普通用户权限即可</li>
+  <li><b>恢复完整概览</b>：插件详情页恢复 Logo、项目亮点、版本徽章等完整展示</li>
+  <li><b>独立汉化</b>：不依赖 JetBrains 官方 Chinese (Simplified) Language Pack</li>
+  <li><b>修正注册</b>：languageBundle 格式对齐可用第三方语言包规范</li>
+  <li><b>一键安装</b>：<code>install-standalone.ps1</code> 普通用户权限即可部署</li>
 </ul>
+
+<h3>📦 安装步骤</h3>
+<ol>
+  <li>运行 <code>.\scripts\install-standalone.ps1</code></li>
+  <li>完全退出 IDEA 后重新打开</li>
+  <li>「外观与行为 → 系统设置 → 语言与区域」选择<b>简体中文（独立版）</b></li>
+  <li>再次完整重启 IDE</li>
+</ol>
+
+<p><b>开发者</b>：屿宸网络科技工作室<br/>
+<b>邮箱</b>：lyc5202025@126.com<br/>
+<b>仓库</b>：<a href="https://github.com/Ms-liyc/IDEA-Chinese">GitHub</a></p>
   ]]></change-notes>
 
   <depends>com.intellij.modules.platform</depends>

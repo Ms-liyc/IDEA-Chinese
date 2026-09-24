@@ -6,7 +6,7 @@
 
 全量扫描 IDEA 界面 NLS 字符串，合并官方中文基线与社区增量翻译，一键安装后即可中文化菜单、设置、检查项与工具窗口。
 
-**✨ 当前版本 1.1.0（独立汉化版）**
+**✨ 当前版本 1.1.1（独立汉化版）**
 
 IDEA 2024.2+ · Language Pack · 约 12 万条基线 + 社区补齐词条
 
@@ -23,7 +23,7 @@ IDEA 2024.2+ · Language Pack · 约 12 万条基线 + 社区补齐词条
 
 <div align="center">
 
-![version](https://img.shields.io/badge/version-1.1.0-blue)
+![version](https://img.shields.io/badge/version-1.1.1-blue)
 ![type](https://img.shields.io/badge/type-Language%20Pack-green)
 ![license](https://img.shields.io/badge/license-MIT-lightgrey)
 ![locale](https://img.shields.io/badge/locale-zh--CN-orange)
@@ -59,7 +59,7 @@ python scripts/l10n.py init --idea-path "D:\Program Files\JetBrains\IntelliJ IDE
 ### 独立汉化安装（推荐）
 
 ```powershell
-python scripts/l10n.py build --version 1.1.0
+python scripts/l10n.py build --version 1.1.1
 .\scripts\install-standalone.ps1
 ```
 
